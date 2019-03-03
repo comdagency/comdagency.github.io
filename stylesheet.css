@@ -107,6 +107,10 @@ body{
     text-decoration-color:#e8e8e8;
 }
 
+#homeNav a:hover, #canvasHeadline h1:hover {
+    color: #f59a8c;
+}
+
 #homeAbout {
     width: 400px;
     font-family: 'aktiv-grotesk-extended', sans-serif;

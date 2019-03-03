@@ -4,6 +4,99 @@
         <meta charset="utf-8">
         <link href="stylesheet.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://use.typekit.net/mft5btj.css">
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>jQuery(function($) {
+02
+ 
+03
+"use strict";
+04
+ 
+05
+var win = $(window)
+06
+    , target = $('body')
+07
+    , wrapper = target.find('> div')
+08
+    , easing = "ease-out" //css easing
+09
+    , duration = "1.2s" //duration ms(millisecond) or s(second)
+10
+    , top = 0
+11
+    , kineticScroll = {
+12
+        _init: function() {
+13
+            if( wrapper.length == 1 ) {
+14
+                target.height(wrapper.height());
+15
+                wrapper.css({
+16
+                    transition: 'transform ' + duration + ' ' + easing,
+17
+                    position: 'fixed',
+18
+                    top: '0',
+19
+                    left: '0',
+20
+                    width: '100%',
+21
+                    padding: '0',
+22
+                    zIndex: '2'
+23
+                });
+24
+ 
+25
+                win.on({
+26
+                    scroll: function () {
+27
+                        kineticScroll._scroll();
+28
+                    }
+29
+                    , resize: function() {
+30
+                        target.height(wrapper.outerHeight());
+31
+                    }
+32
+                });
+33
+ 
+34
+                kineticScroll._scroll();
+35
+            }
+36
+        },
+37
+        _scroll: function() {
+38
+            top = win.scrollTop();
+39
+            wrapper.css('transform', 'translateY(-' + top + 'px)');
+40
+        }
+41
+    };
+42
+ 
+43
+if (typeof window.ontouchstart == 'undefined') {
+44
+    kineticScroll._init();
+45
+}
+46
+});
+</script>
     </head>
     
     <body>
