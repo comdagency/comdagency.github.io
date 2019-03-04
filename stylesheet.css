@@ -130,8 +130,8 @@ body{
 
 #canvasHeadline {
     position:relative;
-    margin-left:auto;
-    margin-bottom:100px;
+    margin-right:auto;
+    margin-bottom:150px;
 }
 
 #canvasHeadline h1 {
@@ -139,14 +139,25 @@ body{
     color: #e8e8e8;
     font-size: 207px;
     letter-spacing: 5px;
-    line-height: 169px;
+    line-height: 190px;
     text-decoration:underline;
     text-decoration-color: #e8e8e8;
-    text-align: right;
+    text-align: left;
 }
 
-#canvasHeadline h1 :hover, {
-    color: #f7280c;
+#canvasHeadline h1:hover  {
+    color: #55a0cf;
+}
+@media only screen and (min-width: 941px) {
+    #canvasHeadline {
+        display:block; 
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    #canvasHeadline {
+        display: none;
+    }
 }
 
 /*SECTION CONTENT*/
