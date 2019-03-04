@@ -178,12 +178,13 @@ body{
         text-align: left;
     }
     #homeNav {
-        width: 350px;
+        width: 500px;
         margin-bottom: 50px;
     }
     #homeNav a {
-        font-size: 50px;
+        font-size: 80px;
         letter-spacing: 1.5px;
+        line-height:1.2em;
 }
 
 }
@@ -335,4 +336,16 @@ body{
 
 #canvas .content h1:hover {
     color:#e9e9e9;
+}
+
+#canvas .content a h3 {
+    color: #55a0cf;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #55a0cf;
+    margin-top: 50px;
+}
+
+#canvas .content a h3:hover {
+    color: #e9e9e9;
 }
