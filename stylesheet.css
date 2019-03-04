@@ -107,7 +107,7 @@ body{
     text-decoration-color:#e8e8e8;
 }
 
-#homeNav a:hover, #canvasHeadline h1:hover {
+#homeNav a:hover {
     color: #f59a8c;
 }
 
@@ -148,16 +148,44 @@ body{
 #canvasHeadline h1:hover  {
     color: #55a0cf;
 }
-@media only screen and (min-width: 941px) {
+
+@media (min-width: 941px) {
     #canvasHeadline {
         display:block; 
     }
+    #canvasHeadlineMOBILE {
+        display:none;
+    }
 }
 
-@media only screen and (max-width: 940px) {
+@media (max-width: 940px) {
     #canvasHeadline {
-        display: none;
+        display:none;
     }
+    #canvasHeadlineMOBILE {
+        position:relative;
+        margin-right:auto;
+        margin-bottom:150px;
+    }
+    #canvasHeadlineMOBILE h1 {
+        font-family: 'monitordisplay', serif;
+        color: #e8e8e8;
+        font-size: 207px;
+        letter-spacing: 5px;
+        line-height: 190px;
+        text-decoration:underline;
+        text-decoration-color: #e8e8e8;
+        text-align: left;
+    }
+    #homeNav {
+        width: 350px;
+        margin-bottom: 50px;
+    }
+    #homeNav a {
+        font-size: 50px;
+        letter-spacing: 1.5px;
+}
+
 }
 
 /*SECTION CONTENT*/
@@ -231,8 +259,6 @@ body{
     font-size: 130px;
 }
 
-
-
 #eventSuggest {
     font-weight:300;
     
@@ -293,7 +319,7 @@ body{
 #canvas .content h3{
     color: #55a0cf;
     font-weight: 300;
-    margin-bottom:25px;
+    margin-bottom:30px;
 }
 
 #canvas .content h1 {
