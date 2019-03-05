@@ -131,6 +131,7 @@ body{
 #canvasHeadline {
     position:relative;
     margin-right:auto;
+    margin-top:100px;
     margin-bottom:150px;
 }
 
@@ -199,7 +200,7 @@ body{
     justify-content: flex-start;
     margin:auto;
     margin-left:0;
-    max-width:1800px;
+    max-width:1600px;
 }
 #canvasContent {
     align-items: flex-start;
