@@ -1,102 +1,10 @@
-<!--DOCTYPE html-->
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <link href="stylesheet.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://use.typekit.net/mft5btj.css">
-        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script>jQuery(function($) {
-02
- 
-03
-"use strict";
-04
- 
-05
-var win = $(window)
-06
-    , target = $('body')
-07
-    , wrapper = target.find('> div')
-08
-    , easing = "ease-out" //css easing
-09
-    , duration = "1.2s" //duration ms(millisecond) or s(second)
-10
-    , top = 0
-11
-    , kineticScroll = {
-12
-        _init: function() {
-13
-            if( wrapper.length == 1 ) {
-14
-                target.height(wrapper.height());
-15
-                wrapper.css({
-16
-                    transition: 'transform ' + duration + ' ' + easing,
-17
-                    position: 'fixed',
-18
-                    top: '0',
-19
-                    left: '0',
-20
-                    width: '100%',
-21
-                    padding: '0',
-22
-                    zIndex: '2'
-23
-                });
-24
- 
-25
-                win.on({
-26
-                    scroll: function () {
-27
-                        kineticScroll._scroll();
-28
-                    }
-29
-                    , resize: function() {
-30
-                        target.height(wrapper.outerHeight());
-31
-                    }
-32
-                });
-33
- 
-34
-                kineticScroll._scroll();
-35
-            }
-36
-        },
-37
-        _scroll: function() {
-38
-            top = win.scrollTop();
-39
-            wrapper.css('transform', 'translateY(-' + top + 'px)');
-40
-        }
-41
-    };
-42
- 
-43
-if (typeof window.ontouchstart == 'undefined') {
-44
-    kineticScroll._init();
-45
-}
-46
-});
-</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     </head>
     
     <body>
@@ -125,8 +33,12 @@ if (typeof window.ontouchstart == 'undefined') {
         </section>
        <!--CANVAS SECTION-->
         <section class="container" id="canvas">
-            <div class="bottomBar" id="bottomCanvas">
-                <h3>canvas</h3>
+            <div class="bottomBarBegin" id="bottomCanvas">
+                <div class="barInfo">
+                    <a class="arrowBack" id="aBBack" href="#home"></a>
+                    <h3>canvas</h3>
+                    <a class="arrowForward" id="aBForward" href="#events"></a>
+                </div>
                 <a href='#home'>
                     <img src="images/ComdAgency%10Logo_canvas.png"/>
                 </a>
@@ -149,7 +61,11 @@ if (typeof window.ontouchstart == 'undefined') {
         <!--EVENTS SECTION-->
         <section class="container" id="events">
             <div class="bottomBar" id=bottomEvents>
-                <h3>events</h3>
+                <div class="barInfo">
+                    <a class="arrowBack" id="aYBack" href="#canvas"></a>
+                    <h3>events</h3>
+                    <a class="arrowForward" id="aYForward" href="#agencyVisits"></a>
+                </div>
                 <a href='home'>
                     <img src="images/ComdAgency%10Logo_events.png"/>
                 </a>
@@ -166,7 +82,11 @@ if (typeof window.ontouchstart == 'undefined') {
         <!--AGENCY VISITS SECTION-->
         <section class="container" id="agencyVisits">
             <div class="bottomBar" id="bottomAgency">
-                <h3>agency visits</h3>
+                <div class="barInfo">
+                    <a class="arrowBack" id="aRBack" href="#events"></a>
+                    <h3>agency visits</h3>
+                    <a class="arrowForward" id="aRForward" href="#about"></a>
+                </div>
                 <a href='#home'>
                     <img src="images/ComdAgency%10Logo_agencyvisits.png"/>
                 </a>
@@ -179,7 +99,10 @@ if (typeof window.ontouchstart == 'undefined') {
         <!--ABOUT SECTION-->
         <section class="container" id="about">
             <div class="bottomBar" id="bottomAbout">
-                <h3>about</h3>
+                <div class="barInfo">
+                    <a class="arrowBack" id="aGBack" href="#agencyVisits"></a>
+                    <h3>about</h3>
+                </div>
                 <a href='#home'>
                     <img src="images/ComdAgency%10Logo.png"/>
                 </a>
@@ -191,5 +114,8 @@ creating community within our department and aiding students in their profession
             
         </section>
     
+        <script src="main.js"></script>
+        
     </body>
+    
 </html>

@@ -167,6 +167,7 @@ body{
         position:relative;
         margin-right:auto;
         margin-bottom:150px;
+        margin-top: 100px;
     }
     #canvasHeadlineMOBILE h1 {
         font-family: 'monitordisplay', serif;
@@ -220,15 +221,42 @@ body{
 
 /*BOTTOM BAR*/
 .bottomBar {
+    position:fixed;
+    width:90%;
+    top:-10;
+    left:0;
+    padding:1.5vh 5vh 2vh 5vh;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.bottomBarBegin {
     position:absolute;
     width:90%;
     top:0;
     left:0;
-    padding:1.5vh 5% 2vh 5%;
+    padding:1.5vh 5vh 2vh 5vh;
     display: flex;
     flex-direction:row;
     justify-content: space-between;
+    height: 60px;
 }
+
+.bottomBarBegin h3 {
+    font-family:'monitordisplay', serif;
+    font-size:50px;
+    letter-spacing: .5px;
+}
+
+.bottomBarBegin img {
+    display:inline-block;
+    height: 40px;
+    width:auto;
+    margin-top:10px;
+}
+
 
 .bottomBar h3 {
     font-family:'monitordisplay', serif;
@@ -243,6 +271,76 @@ body{
     margin-top:10px;
 }
 
+.hiddenBar{
+    display: none;
+}
+
+.fixed {
+    position:fixed;
+    width:90%;
+    top:0;
+    left:0;
+    padding:1.5vh 5% 2vh 5%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height: 60px;
+    z-index: 99999999999;
+}
+
+.barInfo {
+    display: flex;
+}
+
+.arrowBack{
+    width: 30px;
+    height: 65px;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.arrowForward{
+    width: 50px;
+    height: 65px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#aBBack {
+    background-image: url(images/arrows/arrowLeft.png);
+}
+
+#aBForward {
+    background-image: url(images/arrows/arrowRight.png);
+}
+
+#aYBack {
+    background-image: url(images/arrows/arrowLeftYellow.png);
+}
+
+#aYForward {
+    background-image: url(images/arrows/arrowRightYellow.png);
+}
+
+#aRBack {
+    background-image: url(images/arrows/arrowLeftRed.png);
+}
+
+#aRForward {
+    background-image: url(images/arrows/arrowRightRed.png);
+}
+
+#aGBack {
+    background-image: url(images/arrows/arrowLeftWhite.png);
+}
+
+#aGForward {
+    background-image: url(images/arrows/arrowRightWhite.png);
+}
 
 /*EVENTS SECTION*/
 #bottomEvents {
@@ -322,6 +420,7 @@ body{
     color: #55a0cf;
     font-weight: 300;
     margin-bottom:30px;
+    max-width: 800px;
 }
 
 #canvas .content h1 {
