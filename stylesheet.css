@@ -507,7 +507,15 @@ body{
     color: #55a0cf;
     font-weight: 300;
     margin-bottom:30px;
-    max-width: 800px;
+    max-width: 780px;
+}
+
+#canvas .content p{
+    font-family: 'aktiv-grotesk-extended', sans-serif;
+    color: #55a0cf;
+    font-weight: 300;
+    margin-bottom:30px;
+    max-width: 780px;
 }
 
 #canvas .content h1 {
