@@ -132,7 +132,7 @@ body{
     position:relative;
     margin-right:auto;
     margin-top:100px;
-    margin-bottom:150px;
+    margin-bottom:80px;
 }
 
 #canvasHeadline h1 {
@@ -192,7 +192,6 @@ body{
 }
 
 /*SECTION CONTENT*/
-
 
 .content {
     display:flex;
