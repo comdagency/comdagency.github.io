@@ -518,6 +518,17 @@ body{
     max-width: 780px;
 }
 
+#canvas .content h2 {
+    font-family: 'monitordisplay';
+    font-size:145px;
+    text-decoration: underline;
+    color: #55a0cf;
+    letter-spacing: 5px;
+    line-height: 169px;
+    text-decoration-color: #55a0cf;
+    margin-bottom:25px;
+}
+
 #canvas .content h1 {
     font-family: 'monitordisplay';
     font-size: 207px;
