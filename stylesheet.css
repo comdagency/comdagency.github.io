@@ -472,14 +472,14 @@ body{
     margin-top:30px;
 }
 
-#agencyVisits .content #suggestion a {
+#agencyVisits .content #suggestion a, #agencyVisits a {
     font-weight:700;
     color:#f59a8c;
     text-decoration:underline;
     text-decoration-color:#f59a8c;
 }
 
-#agencyVisits .content #suggestion a:hover {
+#agencyVisits .content #suggestion a:hover, #agencyVisits a:hover {
     color:#e9e9e9;
 }
 
