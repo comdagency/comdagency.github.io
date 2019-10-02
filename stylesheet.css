@@ -211,6 +211,10 @@ body{
     line-height:130px;
     margin-bottom:-10px;
     font-size: 130px;
+    font-weight:400;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: none;
     
 }
 
@@ -348,6 +352,7 @@ body{
         font-family:'monitordisplay', serif;
         font-size:80px;
         letter-spacing: .5px;
+        font-weight: 400;
     }
 
     .bottomBarBegin img {
