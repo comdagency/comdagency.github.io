@@ -452,14 +452,14 @@ body{
     color: #f5dd8e;
 }
 
-#eventSuggest a {
+#eventSuggest a, #events a {
     font-weight:700;
     color:#f5dd8e;
     text-decoration: underline;
     text-decoration-color: #f5dd8e;
 }
 
-#eventSuggest a:hover {
+#eventSuggest a:hover, #events a:hover {
     color:#e9e9e9;
 }
 
